@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageProcessingClass</class>
+ <widget class="QMainWindow" name="ImageProcessingClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1601</width>
+    <height>1130</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageProcessing</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1601</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Image_File"/>
+    <addaction name="actionOpen_Vector_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionNext_Image"/>
+    <addaction name="actionLast_Image"/>
+    <addaction name="actionReset_Window"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuBasic_Tools">
+    <property name="title">
+     <string>Basic Tools</string>
+    </property>
+    <addaction name="actionChoose_Band"/>
+   </widget>
+   <widget class="QMenu" name="menuLabel_Task">
+    <property name="title">
+     <string>Label Task</string>
+    </property>
+    <widget class="QMenu" name="menuMode">
+     <property name="title">
+      <string>Mode</string>
+     </property>
+     <addaction name="actionPaint_Polygon"/>
+     <addaction name="actionPaint_Rect"/>
+     <addaction name="separator"/>
+     <addaction name="actionBrowse"/>
+    </widget>
+    <addaction name="menuMode"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Shapefile"/>
+    <addaction name="actionRemove_Shapefile"/>
+    <addaction name="separator"/>
+    <addaction name="actionLabel_Clip"/>
+   </widget>
+   <widget class="QMenu" name="menuIntelligent_Interpretation_Task">
+    <property name="title">
+     <string>Intelligent Interpretation Task</string>
+    </property>
+    <addaction name="actionROI_Mask"/>
+    <addaction name="actionEntire_Mask"/>
+    <addaction name="actionAuto_Mask"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Mask"/>
+    <addaction name="actionReset_Window_3"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuBasic_Tools"/>
+   <addaction name="menuLabel_Task"/>
+   <addaction name="menuIntelligent_Interpretation_Task"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_Image_File">
+   <property name="text">
+    <string>Open Image File</string>
+   </property>
+  </action>
+  <action name="actionOpen_Vector_File">
+   <property name="text">
+    <string>Open Vector File</string>
+   </property>
+  </action>
+  <action name="actionReset_Window">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionNext_Image">
+   <property name="text">
+    <string>Next Image</string>
+   </property>
+  </action>
+  <action name="actionLast_Image">
+   <property name="text">
+    <string>Last Image</string>
+   </property>
+  </action>
+  <action name="actionChoose_Band">
+   <property name="text">
+    <string>Choose Band</string>
+   </property>
+  </action>
+  <action name="actionSave_Shapefile">
+   <property name="text">
+    <string>Save Shapefile</string>
+   </property>
+  </action>
+  <action name="actionRemove_Shapefile">
+   <property name="text">
+    <string>Remove Shapefile</string>
+   </property>
+  </action>
+  <action name="actionLabel_Clip">
+   <property name="text">
+    <string>Label Clip</string>
+   </property>
+  </action>
+  <action name="actionBrowse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionPaint_Polygon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Polygon</string>
+   </property>
+  </action>
+  <action name="actionPaint_Rect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Rect</string>
+   </property>
+  </action>
+  <action name="actionROI_Mask">
+   <property name="text">
+    <string>ROI Mask</string>
+   </property>
+  </action>
+  <action name="actionReset_Window_3">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionEntire_Mask">
+   <property name="text">
+    <string>Entire Mask</string>
+   </property>
+  </action>
+  <action name="actionAuto_Mask">
+   <property name="text">
+    <string>Auto Mask</string>
+   </property>
+  </action>
+  <action name="actionSave_Mask">
+   <property name="text">
+    <string>Save_Mask</string>
+   </property>
+   <property name="toolTip">
+    <string>Save_Mask</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ImageProcessing.qrc"/>
+ </resources>
+ <connections/>
+</ui>
